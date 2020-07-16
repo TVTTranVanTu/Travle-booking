@@ -1,0 +1,123 @@
+.topbar {
+    width: 100%;
+    padding: 5px 0;
+    background: #fff;
+    border-bottom: 1px solid #f1f1f1;
+    position: relative;
+    z-index: 3;
+    .container {
+        .topbar__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .topbar__logo {
+                h1 {
+                    margin: 0;
+                    .logo__vntrip {
+                        background: url(https://statics.vntrip.vn/images//svg/logo-vntrip-black.svg);
+                        background-size: 100%;
+                        width: 90px;
+                        height: 36px;
+                        text-indent: -9999px;
+                        display: block;
+                        padding: 0;
+                    }
+                }
+            }
+            .topbar__right {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                .topbar__hotline {
+                    display: flex;
+                    margin-right: 20px;
+                    svg {
+                        margin-right: 10px;
+                        width: 16px;
+                        height: 16px;
+                    }
+                    p {
+                        margin: 0;
+                        font-size: 14px;
+                        color: #438dc4;
+                    }
+                }
+                .topbar__current {
+                    margin-right: 20px;
+                    i {
+                        margin-left: 5px;
+                    }
+                }
+                .topbar__language {
+                    margin-right: 20px;
+                    .flag_vn {
+                        width: 25px;
+                        height: 17px;
+                        background-image: url(https://statics.vntrip.vn/images/sprite/sprite-lang.png);
+                        background-position: -30px;
+                        display: inline-block;
+                        background-repeat: no-repeat;
+                        vertical-align: sub;
+                        margin-right: 10px;
+                    }
+                    i {
+                        margin-left: 5px;
+                    }
+                }
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    display: contents;
+                    li {
+                        .register {
+                            padding: 7px 15px;
+                            color: #fff;
+                            background-color: #438dc4;
+                            font-size: 14px;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 660px) {
+    .topbar {
+        .container {
+            .topbar__content {
+                .topbar__right {
+                    .topbar__hotline {
+                        display: none;
+                    }
+                    .topbar__current {
+                        display: none;
+                    }
+                    .topbar__language {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    // .topbar {
+    //     .container {
+    //         .topbar__content {
+    //             .topbar__right {
+    //                 .topbar__hotline {
+    //                     display: none;
+    //                 }
+    //                 .topbar__current {
+    //                     display: none;
+    //                 }
+    //                 .topbar__language {
+    //                     display: none;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+}

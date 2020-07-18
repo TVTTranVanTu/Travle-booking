@@ -6,6 +6,9 @@ class sliderShow extends Component {
         this.state = {
             sliderIndex: 0,
         };
+        this.setSliderIndex = this.setSliderIndex.bind(this);
+        this.getNewSlideIndex = this.getNewSliderIndex.bind(this);
+        this.runAutomatic = this.runAutomatic.bind(this);
     }
     getNewSliderIndex(step) {
         const sliderIndex = this.state.sliderIndex;
@@ -74,7 +77,7 @@ class sliderShow extends Component {
                                     className={
                                         `dot ${this.state.sliderIndex === index ? "active" : ""}`
                                     }
-                                    onClick={() => this.setSlideIndex(index)}
+                                    onClick={() => this.setSliderIndex(index)}
                                 >
                                 </span>
                             )

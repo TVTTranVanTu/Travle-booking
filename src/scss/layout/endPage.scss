@@ -1,0 +1,38 @@
+.end__page {
+    background-color: #ff8916;
+    color: #fff;
+    text-align: left;
+    align-items: center;
+    .container {
+        .content__end {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            .content__left {
+                padding: 15px 0;
+                span {
+                    vertical-align: middle;
+                    display: inline-block;
+                    padding-right: 15px;
+                    font-size: 12px;
+                }
+            }
+            .content__right {
+                display: flex;
+                align-items: center;
+                a {
+                    color: #fff;
+                    margin-right: 20px;
+                    i {
+                        font-size: 18px;
+                        padding-right: 10px;
+                    }
+                    span {
+                        font-size: 12px;
+                        position: relative;
+                        top: -3px;
+                    }
+                }
+            }
+        }
+    }
+}

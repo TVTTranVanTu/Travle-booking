@@ -1,0 +1,53 @@
+.newspapers {
+    padding: 10px 0;
+    .container {
+        .newspaper__title {
+            margin-bottom: 40px;
+        }
+        .articles {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin: 0 0 30px;
+
+            .articles__item {
+                .sprite__logo {
+                    background-image: url(../../assets/img/destinationhot/sprite-logo.png);
+                    background-repeat: no-repeat;
+                    margin: auto;
+                }
+                .item1 {
+                    width: 90px;
+                    height: 33px;
+                    background-position: 0 -73px;
+                }
+                .item2 {
+                    width: 131px;
+                    height: 30px;
+                    background-position: -95px -74px;
+                }
+                .item3 {
+                    width: 101px;
+                    height: 31px;
+                    background-position: -229px -74px;
+                }
+                .item4 {
+                    width: 62px;
+                    height: 60px;
+                    background-position: -333px -60px;
+                }
+                .item5 {
+                    width: 102px;
+                    height: 29px;
+                    background-position: -398px -75px;
+                }
+                .item6 {
+                    width: 101px;
+                    height: 29px;
+                    background-position: -504px -75px;
+                }
+            }
+        }
+    }
+}

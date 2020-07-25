@@ -1,0 +1,108 @@
+.footer {
+    border-top: 2px solid #ff8917;
+    background-color: #fff;
+    padding: 0 0 20px;
+    .container {
+        .footer__head {
+            font-size: 14px;
+            font-weight: 600;
+            color: #666;
+            margin: 30px 0;
+            border-bottom: 1px solid #ccc;
+            text-align: left;
+            span {
+                display: inline-block;
+                background-color: #fff;
+                padding-right: 40px;
+                transform: translateY(5px);
+            }
+        }
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            text-align: left;
+            padding: 0;
+            margin-bottom: 10px;
+            li {
+                padding: 0;
+                a {
+                    font-size: 11px;
+                    color: #666;
+                }
+            }
+        }
+        .clearfix {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #d8d8d8;
+        }
+        .about__vntrip {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr 2fr;
+            ul {
+                display: block;
+                li {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+            p,
+            span,
+            i {
+                line-height: 16px;
+                text-align: left;
+                color: #666;
+                padding: 4px 0;
+                font-size: 14px;
+                margin: 0;
+            }
+            i {
+                color: green;
+                padding-left: 5px;
+            }
+
+            .app {
+                img {
+                    width: 122px;
+                    max-width: 100%;
+                }
+            }
+
+            .subrice {
+                p {
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+                .form__subrice {
+                    display: flex;
+                    margin-bottom: 30px;
+                    input {
+                        margin: 0;
+                        width: calc(100% - 98px);
+                        border: 1px solid #ccc;
+                    }
+                    .form__control {
+                        padding: 6px;
+                    }
+                    button {
+                        background: 0 0;
+                        border: 2px solid #ff8917;
+                        font-weight: 300;
+                        color: #ff8917;
+                        font-size: 14px;
+                        width: 98px;
+                        padding: 9px 15px;
+                    }
+                }
+                .footer__cn {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        width: 150px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

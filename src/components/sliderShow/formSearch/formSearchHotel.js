@@ -13,12 +13,12 @@ function FormSearhHotel() {
                         </div>
                         <div className="check__in">
                             <p>Nhận phòng</p>
-                            <img src={require("../../../assets/svg/calct-flight-input.svg")}></img>
+                            <img alt="flight" src={require("../../../assets/svg/calct-flight-input.svg")}></img>
                             <input type="text" className="input__time" placeholder=""></input>
                         </div>
                         <div className="check__out">
                             <p>Trả phòng</p>
-                            <img src={require("../../../assets/svg/calct-flight-input.svg")}></img>
+                            <img alt="flight" src={require("../../../assets/svg/calct-flight-input.svg")}></img>
                             <input type="text" className="input__time" placeholder=""></input>
                         </div>
                         <button className="search__submit" types="submit"><i className="fas fa-search"></i>Tìm kiếm</button>

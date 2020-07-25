@@ -1,0 +1,28 @@
+.foreground {
+    fill: #fff;
+}
+.stroke {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 3px;
+    stroke-miterlimit: 10;
+}
+.class-svg {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    border-radius: 50%;
+    transition: transform 175ms ease-in-out, border 175ms ease-in-out, width 175ms ease-in-out, height 175ms ease-in-out;
+    cursor: pointer;
+    z-index: 99999999;
+}
+.onesignal-bell-svg {
+    display: block;
+    width: 54px;
+    height: 54px;
+    fill: #e54b4d;
+}
+.onesignal-bell-svg {
+    filter: drop-shadow(0 2px 4px rgba(34, 36, 38, 0.35));
+    -webkit-filter: drop-shadow(0 2px 4px rgba(34, 36, 38, 0.35));
+}

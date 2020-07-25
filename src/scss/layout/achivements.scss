@@ -1,0 +1,93 @@
+.achievements {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    margin: 0 0 30px;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .container {
+        display: flex;
+        button {
+            background: none;
+            i {
+                font-size: 20px;
+            }
+        }
+        ul {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            display: flex;
+            .achievement__item {
+                display: block;
+                width: 15%;
+                min-width: 177px;
+                padding: 10px;
+                cursor: auto;
+                overflow: hidden;
+                .achievement__img {
+                    line-height: 60px;
+                    margin-bottom: 10px;
+                    .sprite__logo {
+                        background-image: url(../../assets/img/destinationhot/sprite-logo.png);
+                        background-repeat: no-repeat;
+                        margin: auto;
+                    }
+
+                    .sprite_top10 {
+                        width: 54px !important;
+                        height: 54px !important;
+                    }
+                    .sprite_gold {
+                        width: 85px !important;
+                        height: 55px !important;
+                        background-position: -54px 0;
+                    }
+                    .sprite_appell {
+                        width: 55px !important;
+                        height: 55px !important;
+                        background-position: -139px 0;
+                    }
+                    .sprite_prize1 {
+                        width: 42px !important;
+                        height: 55px !important;
+                        background-position: -194px 0;
+                    }
+                    .prite_prize2 {
+                        width: 66px !important;
+                        height: 55px !important;
+                        background-position: -237px 0;
+                    }
+                    .prite_honors {
+                        width: 57px !important;
+                        height: 55px !important;
+                        background-position: -301px 0;
+                    }
+                    .sprite_awards {
+                        width: 148px !important;
+                        height: 55px !important;
+                        background-position: -366px 0;
+                        background-repeat: no-repeat;
+                        margin: auto;
+                    }
+                }
+            }
+            .title {
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-bottom: 8px;
+            }
+            .about {
+                max-width: 140px;
+                margin: auto;
+            }
+            p {
+                font-size: 14px;
+                line-height: 17px;
+                color: #1a1a1a;
+            }
+        }
+    }
+}

@@ -11,7 +11,7 @@ import Newspapers from '../components/newspapers';
 function Home() {
     return (
         <div className="home">
-            <Slider></Slider>
+            <Slider active={true}></Slider>
             <RewardReason></RewardReason>
             <DestinationHot></DestinationHot>
             <DestinationInternation></DestinationInternation>

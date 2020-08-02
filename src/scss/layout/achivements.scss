@@ -16,14 +16,15 @@
         }
         ul {
             overflow: hidden;
-            margin: 0;
             padding: 0;
             position: relative;
             display: flex;
+            margin: 0 40px;
             .achievement__item {
                 display: block;
-                width: 15%;
-                min-width: 177px;
+                min-width: 15%;
+                position: relative;
+                width: 177px;
                 padding: 10px;
                 cursor: auto;
                 overflow: hidden;

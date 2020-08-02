@@ -1,92 +1,66 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
+import collection from "../../data/sliderImage";
 
-class sliderShow extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            sliderIndex: 0,
-        };
-        this.setSliderIndex = this.setSliderIndex.bind(this);
-        this.getNewSlideIndex = this.getNewSliderIndex.bind(this);
-        this.runAutomatic = this.runAutomatic.bind(this);
-    }
-    getNewSliderIndex(step) {
-        const sliderIndex = this.state.sliderIndex;
-        const numberSlider = this.props.input.length;
-        let newSliderIndex = sliderIndex + step;
 
-        if (newSliderIndex >= numberSlider) {
-            newSliderIndex = 0;
-        }
-        else if (newSliderIndex < 0) {
-            newSliderIndex = numberSlider - 1;
-        }
-        return newSliderIndex;
-    }
-    prevSlider() {
-        this.setState({
-            sliderIndex: this.getNewSliderIndex(-1)
-        });
-    }
-    nextSlider() {
-        this.setState({
-            sliderIndex: this.getNewSliderIndex(1)
-        });
-    }
-    setSliderIndex(index) {
-        this.setState({
-            sliderIndex: index
-        })
-    }
-    runAutomatic() {
-        this.setState({
-            sliderIndex: this.getNewSliderIndex(1)
-        })
-    }
-    componentDidMount() {
-        this.automaticInterval = setInterval(
-            () => this.runAutomatic(),
-            Number.parseInt(this.props.timeout)
-        );
-    }
-    render() {
-        return (
-            <div className="slidershow">
-                <div className="container">
-                    {
-                        this.props.input.map((image, index) => {
-                            return (
-                                <div
-                                    key={index}
-                                    className={`slider ${this.state.sliderIndex === index ? "active" : ""}`}
-                                >
-                                    <img className="image" src={image.src} alt={image.caption} />
-                                </div>
+function SliderShow() {
+    let sliderArray = collection;
+    const [active, setActive] = useState(0);
+    const [dot, setDot] = useState(0);
+    // const prev = () => {
 
-                            )
-                        })
-                    }
+    //     active === 0 ? setActive(-100 * (sliderArray.length - 1)) : setActive(active + 100)
+    //     dot === 0 ? setDot(sliderArray.length - 1) : setDot(dot - 1);
+    // }
+    const next = () => {
 
-                </div>
-                <div className="dotslider">
-                    {
-                        this.props.input.map((_, index) => {
-                            return (
-                                <span
-                                    key={index}
-                                    className={
-                                        `dot ${this.state.sliderIndex === index ? "active" : ""}`
-                                    }
-                                    onClick={() => this.setSliderIndex(index)}
-                                >
-                                </span>
-                            )
-                        })
-                    }
-                </div>
+        dot === (sliderArray.length - 1) ? setDot(0) : setDot(dot + 1);
+        active === -100 * (sliderArray.length - 1) ? setActive(0) : setActive(active - 100)
+    }
+    const setNewActive = (index) => {
+
+        console.log(index)
+        setActive(-100 * index)
+        setDot(index)
+
+    }
+    useEffect(() => {
+        const interval = setInterval(() => {
+            next()
+        }, 15000);
+        return () => clearInterval(interval);
+    });
+    return (
+
+        <div className="slider">
+            {sliderArray.map((image, index) => {
+                return (
+                    <div key={index} className="slide" style={{ transform: `translateX(${active}%)` }}>
+                        <img className="image" src={image.src} alt={image.caption} />
+
+                    </div>
+                )
+            })}
+            <div className="dotslider">
+                {
+                    sliderArray.map((image, index) => {
+                        return (
+                            <span
+                                key={index}
+                                className={
+                                    `dot ${dot === index ? "active" : ""}`
+                                }
+                                onClick={() => setNewActive(index)}
+
+                            >
+                            </span>
+                        )
+                    })
+                }
             </div>
-        );
-    }
+            {/* <button className="buttonleft" onClick={prev}>left</button>
+            <button className="buttonright" onClick={next}>right</button> */}
+        </div >
+    );
 }
 
-export default sliderShow;
+export default SliderShow;

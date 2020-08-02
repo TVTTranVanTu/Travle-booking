@@ -1,0 +1,66 @@
+.information {
+    .container {
+        .promotion-hot {
+            .promotion-hot__title {
+                text-align: center;
+                margin: 40px 10px 30px;
+                h2 {
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: #262626;
+                    margin: 0;
+                }
+            }
+            .promotion-selected__contents {
+                text-align: left;
+                line-height: 1.5em;
+                overflow: hidden;
+                .promotion-selected__contents__image {
+                    img {
+                        float: left;
+                        margin-right: 79px;
+                        margin-top: 10px;
+                        max-width: 100%;
+                    }
+                }
+                .promotion-selected__contents__texts {
+                    margin-top: 51px;
+                    overflow: hidden;
+                    position: relative;
+                    p {
+                        margin: 0 0 10px;
+                        font-size: 14px;
+                        color: #595959;
+                    }
+                    h4 {
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+                    ul {
+                        display: block;
+                        margin-top: 0;
+                        margin-bottom: 10px;
+                        list-style-type: disc !important;
+                        list-style: disc;
+                        li {
+                            display: list-item;
+                            font-size: 14px;
+                            text-align: -webkit-match-parent;
+                        }
+                    }
+                }
+                .click-view-more-selected {
+                    color: #fa8c16;
+                    font-size: 14px;
+                    cursor: pointer;
+                    position: absolute;
+                    margin-top: 10px;
+                    // .click {
+                    //     position: absolute;
+                    //     bottom: -10px;
+                    // }
+                }
+            }
+        }
+    }
+}

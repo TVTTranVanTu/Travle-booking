@@ -5,7 +5,6 @@ import Topbar from './components/topbar';
 import Header from './components/header';
 
 
-import Home from './view/home';
 import Footer from './components/footer';
 import EndPage from './components/end-page';
 import CricleContact from './components/contact/cricle_contact';
@@ -19,7 +18,6 @@ function App() {
       <Header></Header>
       <CricleContact></CricleContact>
       <BoxChat></BoxChat>
-      <Home></Home>
       <Footer></Footer>
       <EndPage></EndPage>
     </div>

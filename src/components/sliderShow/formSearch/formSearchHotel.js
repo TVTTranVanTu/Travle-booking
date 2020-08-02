@@ -1,6 +1,7 @@
 import React from 'react';
 
 
+
 function FormSearhHotel() {
     return (
         <div className="searchhotelplane">

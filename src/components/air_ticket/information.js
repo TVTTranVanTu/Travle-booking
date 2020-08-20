@@ -3,13 +3,19 @@ import React, { useState } from 'react';
 
 function Information() {
     const [height, setHeight] = useState(`160px`);
+    const [overflow, setOverflow] = useState(`hidden`);
+    const [active, setActive] = useState(true);
     const view = () => {
         console.log(height)
         setHeight(`auto`)
+        setOverflow(`unset`)
+        setActive(!active)
     }
     const hidden = () => {
         console.log(height)
         setHeight(`160px`)
+        setOverflow(`hidden`)
+        setActive(!active)
     }
     return (
         <div className="information">
@@ -20,9 +26,9 @@ function Information() {
                     </div>
                     <div className="promotion-selected__contents">
                         <div className="promotion-selected__contents__image">
-                            <img src={require(`../assets/img/image_icon/luachonhangdau.png`)} alt="icon"></img>
+                            <img src={require(`../../assets/img/image_icon/luachonhangdau.png`)} alt="icon"></img>
                         </div>
-                        <div className="promotion-selected__contents__texts" style={{ height: `${height}` }}>
+                        <div className="promotion-selected__contents__texts" style={{ height: `${height}`, overflow: `${overflow}` }}>
                             <p>Đi du lịch thì điều quan trọng nhất chính là thoải mái. Chính vì vậy mà việc đặt vé máy bay cũng cần thật đơn giản, nhanh chóng. Với Vntrip việc đặt vé máy bay của bạn chưa bao giờ dễ dàng đến thế!</p>
                             <div className="text-title">
                                 <h4>Vntrip lắng nghe nỗi lo của bạn trước mỗi chuyến bay và cung cấp giải pháp trọn vẹn dành cho bạn!</h4>
@@ -123,11 +129,11 @@ function Information() {
                             </div>
 
                         </div>
-                        <a className="click-view-more-selected">
-                            <span className="click" onClick={() => view()}>
+                        <a href="/" className="click-view-more-selected">
+                            <span className={`${active === true ? "active" : "hidden"}`} onClick={() => view()}>
                                 Xem thêm <i className="fa fa-angle-down" aria-hidden="true"></i>
                             </span>
-                            <span className="hidden" onClick={() => hidden()}>
+                            <span className={`${active === true ? "hidden" : "active"}`} onClick={() => hidden()}>
                                 Thu gọn <i className="fa fa-angle-up" aria-hidden="true"></i>
                             </span>
                         </a>

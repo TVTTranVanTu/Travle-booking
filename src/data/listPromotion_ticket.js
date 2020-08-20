@@ -1,29 +1,39 @@
 let ListPromotionTicket = [
     {
         id: 1,
-        name: "Ha Noi",
+        name: "Hồ Chí Minh - Tuy Hòa",
         picture: "hon-yen-phu-yen.jpeg",
+        code: "SGN - TBB",
+        price: "69.000 đ",
     },
     {
         id: 2,
-        name: "Ha Noi",
+        name: "Hồ Chí Minh - Thanh Hóa",
         picture: "11-2.jpg",
+        code: "SGN - THD",
+        price: "299.000 đ",
     },
 
     {
         id: 3,
-        name: "Ha Noi",
-        picture: "da-lat-anh-dep-thien-nhien-2020.jpg",
+        name: "Hà Nội - Quy Nhơn",
+        picture: "eo-gio-quy-nhon-vntrip.jpg",
+        code: "HAN - UIH",
+        price: "199.000 đ",
     },
     {
         id: 4,
-        name: "Ha Noi",
-        picture: "bai-dai-nha-trang.png",
+        name: "Hà Nội - Đà Lạt",
+        picture: "da-lat-anh-dep-thien-nhien-2020.jpg",
+        code: "HAN - DLI",
+        price: "199.000 đ",
     },
     {
         id: 5,
-        name: "Ha Noi",
-        picture: "eo-gio-quy-nhon-vntrip.jpg",
+        name: "Hà Nội - Nha Trang",
+        picture: "bai-dai-nha-trang.png",
+        code: "HAN- CXR",
+        price: "99.000 đ",
     },
 
 ]

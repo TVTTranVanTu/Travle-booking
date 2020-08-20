@@ -1,0 +1,32 @@
+.form-control {
+    box-shadow: none !important;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    height: 40px;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    padding: 0 10px 0 10px;
+    background-color: #fff;
+    background-image: none;
+}
+input {
+    width: 100%;
+    max-width: calc(100% - 32px);
+    height: 35px;
+    border-radius: 4px;
+    padding-left: 45px;
+    padding-right: 20px;
+    border: solid 1px #dcdff1;
+    color: #202842;
+}
+input:focus {
+    border: solid 1px #2e6da8;
+    outline: 0;
+}
+.des-search {
+    padding-left: 10px !important;
+}

@@ -18,7 +18,7 @@
         display: flex;
         margin: 0;
         padding: 0;
-        z-index: 2;
+        z-index: 1;
         margin-top: -74px;
         .slide {
             display: flex;
@@ -34,7 +34,7 @@
             position: absolute;
             z-index: 3;
             bottom: 60px;
-            right: 5%;
+            right: 7%;
             .dot {
                 height: 13px;
                 width: 13px;
@@ -58,7 +58,6 @@
             .title__form {
                 position: absolute;
                 bottom: 65px;
-                left: 5%;
                 z-index: 2;
                 a {
                     position: relative;
@@ -94,20 +93,14 @@
                 bottom: 56px;
                 margin-bottom: 11px;
                 background-color: #fff;
-                p {
+                p,
+                .come__back-title {
                     font-size: 14px;
                     color: #222;
                     margin: 0 0 10px;
                     float: left;
                 }
-                input {
-                    margin: 0;
-                    width: 100%;
-                    font-size: 14px;
-                    border-radius: 4px;
-                    border: 1px solid #ccc;
-                    height: 34px;
-                }
+
                 .formsearch__content {
                     position: relative;
                     align-items: flex-end;
@@ -129,11 +122,7 @@
                     .check__out {
                         width: 15%;
                     }
-                    img {
-                        position: relative;
-                        top: 37px;
-                        left: -100px;
-                    }
+
                     .search__submit {
                         width: 10%;
                         height: 40px;
@@ -153,9 +142,16 @@
                     justify-content: space-between;
                     width: 100%;
                     margin-bottom: 10px;
-                    grid-template-columns: 32% 32% 32%;
+                    grid-template-columns: 33% 33% 33%;
                     grid-column-gap: 10px;
                     grid-row-gap: 1em;
+                    box-sizing: border-box;
+                    input {
+                        max-width: 100%;
+                    }
+                    input::placeholder {
+                        transform: translateX(144px);
+                    }
                     .search__submit {
                         height: 40px;
                         background-color: #ff8917;
@@ -167,6 +163,68 @@
                             top: 1px;
                         }
                     }
+                    .fc__icon {
+                        position: absolute;
+                        top: 6px;
+                        right: -17px;
+                        z-index: 1;
+                        cursor: pointer;
+                        box-sizing: border-box;
+                        a {
+                            display: block;
+                            width: 24px;
+                            height: 24px;
+                            color: #777;
+                            text-align: center;
+                            line-height: 24px;
+                            background-color: #fff;
+                            border: 1px solid #ddd;
+                            border-radius: 50%;
+                            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+                            font-size: 16px;
+                            svg {
+                                left: 30%;
+                                top: 25%;
+                            }
+                        }
+                    }
+
+                    .control__toggle {
+                        position: relative;
+                        display: inline-block;
+                        width: 28px;
+                        height: 16px;
+                        margin-left: 10px;
+                        transform: translateY(3px);
+                    }
+                    .control__toggle input[type="checkbox"] {
+                        display: none;
+                    }
+                    .control__toggle {
+                        .change {
+                            background-color: #2196f3;
+                            cursor: pointer;
+                            width: 100%;
+                            height: 100%;
+                            transition: 0.4s;
+                            position: relative;
+                            border-radius: 50px;
+                        }
+                        .change:before {
+                            background-color: #fff;
+                            bottom: 2px;
+                            content: "";
+                            height: 12px;
+                            right: 3px;
+                            position: absolute;
+                            transition: 0.4s;
+                            width: 12px;
+                            border-radius: 50px;
+                        }
+                    }
+                    .control__toggle input[type="checkbox"]:checked + .change:before {
+                        transform: translateX(-9px);
+                    }
                 }
             }
         }
@@ -176,5 +234,22 @@
     }
     .form__active {
         display: block;
+    }
+    .input__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        img,
+        svg {
+            position: absolute;
+            cursor: pointer;
+            left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
     }
 }

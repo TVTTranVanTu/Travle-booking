@@ -1,5 +1,5 @@
 import React from 'react';
-import ListExperience from "../data/lisstExperience";
+import ListExperience from "../../data/lisstExperience";
 
 function PromotionTickitHot() {
     return (
@@ -24,7 +24,7 @@ function PromotionTickitHot() {
                                 return (
                                     <div className="promotion-hot__item" key={index}>
                                         <div className="promotion-hot__content__image">
-                                            <img src={require(`../assets/img/list_imageExp/${list.picture}`)} alt={list.name}></img>
+                                            <img src={require(`../../assets/img/list_imageExp/${list.picture}`)} alt={list.name}></img>
                                         </div>
                                         <div className="promotion-hot__contents__text">
                                             <div className="text-top">

@@ -1,0 +1,137 @@
+.login__form {
+    width: 100%;
+    border-radius: 0;
+    .login__title {
+        font-size: 16px;
+        color: #262626;
+        font-weight: 600;
+        text-align: left;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .login__content {
+        .accout__form {
+            p {
+                text-align: left;
+                width: 100%;
+                margin: 16px 0;
+                font-size: 14px;
+                color: #444;
+                float: left;
+            }
+            .login-facebook {
+                background: #546fae;
+                font-size: 14px;
+                padding: 0;
+                color: #fff;
+                width: 47%;
+                float: left;
+                border-radius: 5%;
+                cursor: pointer;
+                height: 35px;
+                line-height: 35px;
+                transition: 0.2s;
+                text-align: left;
+                i {
+                    border-right: solid 1px #fff;
+                    float: left;
+                    padding: 10px;
+                }
+                span {
+                    padding: 0 0 0 14px;
+                    text-transform: none;
+                }
+            }
+            .login-google {
+                background: #dd4d30;
+                font-size: 14px;
+                padding: 0;
+                color: #fff;
+                width: 47%;
+                float: right;
+                border-radius: 5%;
+                cursor: pointer;
+                height: 35px;
+                line-height: 35px;
+                transition: 0.2s;
+                text-align: left;
+                i {
+                    border-right: solid 1px #fff;
+                    color: #fff;
+                    padding: 10px;
+                }
+                span {
+                    padding: 0 0 0 14px;
+                    text-transform: none;
+                }
+            }
+            .form-group-login {
+                position: relative;
+                .form-control {
+                    height: 48px;
+                    background: #fff;
+                    border-radius: 5px;
+                    margin-bottom: 24px;
+                    border: 1px solid #d9d9d9;
+                    display: block;
+                    width: 100%;
+                    font-size: 14px;
+                    line-height: 1.42857143;
+                    color: #555;
+                }
+            }
+            .form-password {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 25px;
+
+                label {
+                    position: relative;
+                    top: -23px;
+                    input {
+                        position: relative;
+                        top: 12px;
+                        padding-right: 5px;
+                    }
+                }
+
+                .form-check {
+                    width: auto;
+                }
+            }
+            button {
+                width: 100%;
+                border-radius: 5px;
+                color: #fff;
+                background-color: #ff8917;
+                border: none;
+            }
+            .btn {
+                box-shadow: none;
+                padding: 9px 15px;
+                text-shadow: none;
+                font-size: 14px;
+            }
+        }
+        .accout__footer {
+            padding: 15px 0;
+            width: 100%;
+            text-align: left;
+            float: left;
+            p {
+                font-size: 14px;
+                color: #444;
+                text-transform: none;
+                margin: 0 0 10px;
+                a {
+                    text-decoration: underline;
+                    text-transform: none;
+                    color: #fa8c16;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

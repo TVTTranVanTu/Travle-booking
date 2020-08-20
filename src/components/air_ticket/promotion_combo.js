@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import ListCombo from "../data/listCombo";
+import ListCombo from "../../data/listCombo";
 
 function PromotionCombo() {
     const [active, setActive] = useState(0);
     const [transition, setTransition] = useState(2);
 
     const next = () => {
-        parseInt(active) === parseInt((272.61 + 15) * (ListCombo.length - 4)) ? setActive(0) : setActive(active + 272.61 + 15);
-        parseInt(active) === parseInt((272.61 + 15) * (ListCombo.length - 4)) ? setTransition(0) : setTransition(2);
+        parseInt(active) === parseInt((254.391 + 15) * (ListCombo.length - 4)) ? setActive(0) : setActive(active + 254.391 + 15);
+        parseInt(active) === parseInt((254.391 + 15) * (ListCombo.length - 4)) ? setTransition(0) : setTransition(2);
 
     }
     useEffect(() => {
@@ -29,7 +29,7 @@ function PromotionCombo() {
                             return (
                                 <li key={index} className="promotion__comboItem" style={{ left: `-${active}px`, transition: `all ${transition}s` }}>
                                     <div className="promotion__comboImage">
-                                        <img alt={list.name} src={require(`../assets/img/ticket_hotel/${list.picture}`)}></img>
+                                        <img alt={list.name} src={require(`../../assets/img/ticket_hotel/${list.picture}`)}></img>
                                     </div>
                                     <div className="promotion__comboContent">
                                         <div className="text__top">

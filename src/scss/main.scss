@@ -20,14 +20,24 @@
 @import "layout/promotionCombo";
 @import "layout/promotiontickethot";
 @import "layout/information";
+@import "layout/login";
+@import "layout/register";
+@import "layout/left_bar";
+@import "layout/right_bar";
+@import "layout/luxuryReason";
+@import "layout/luxuryslider";
+@import "layout/luxuryColection";
+
 // @import "layout/forms";
 
 @import "components/buttons";
 @import "components/carousel";
 @import "components/slider";
+@import "components/inputs";
 
 @import "pages/home";
-// @import "pages/about";
+@import "pages/deal_hotel";
+@import "pages/luxury";
 // @import "pages/contact";
 
 // @import "themes/theme";

@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Popup from "reactjs-popup";
+import Login from './login';
+import Register from './register';
 
 function Topbar() {
     return (
@@ -39,20 +42,30 @@ function Topbar() {
                         </div>
                         <ul>
                             <li>
-                                <a href="/" className="login">
-                                    Đăng nhập
-                            </a>
+                                <Popup modal trigger={
+
+                                    <a className="login">
+                                        Đăng nhập
+                                </a>}>
+                                    <Login></Login>
+                                </Popup>
+
                             </li>
                             <li>
-                                <button type="submit" className="register">
-                                    Đăng ký
-                                </button>
+                                <Popup modal trigger={
+
+                                    <button type="submit" className="register">
+                                        Đăng ký
+                                </button>}>
+                                    <Register></Register>
+                                </Popup>
                             </li>
                         </ul>
                     </div>
                 </div>
 
             </div>
+
         </div>
     );
 }

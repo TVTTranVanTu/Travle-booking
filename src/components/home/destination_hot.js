@@ -1,5 +1,5 @@
 import React from 'react';
-import DesnitionHot from "../data/listDestination";
+import DesnitionHot from "../../data/listDestination";
 
 function DestinationHot() {
     let listDensnitionhot = DesnitionHot;
@@ -16,7 +16,7 @@ function DestinationHot() {
                                 return (
                                     <li key={index} className={`item${list.id}`}>
                                         <a href="/" >
-                                            <img alt={list.name} src={require(`../assets/img/destinationhot/${list.picture}`)}></img>
+                                            <img alt={list.name} src={require(`../../assets/img/destinationhot/${list.picture}`)}></img>
                                         </a>
                                     </li>
                                 )

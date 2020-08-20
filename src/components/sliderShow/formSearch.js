@@ -16,7 +16,7 @@ function FormSearch(props) {
             <div className="formsearch">
                 <div className="container">
                     <div className="title__form">
-                        <a onClick={handleCLick} className={`${active === true ? "active" : ""}`}  >
+                        <a href="/search" onClick={handleCLick} className={`${active === true ? "active" : ""}`}  >
                             <span>
                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clipPath="url(#clip0)">
@@ -38,7 +38,7 @@ function FormSearch(props) {
                         </span>
 
                         </a>
-                        <a onClick={handleCLick} className={`${active === true ? "" : "active"}`}>
+                        <a href="/search" onClick={handleCLick} className={`${active === true ? "" : "active"}`}>
                             <span>
                                 <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13.0002 10.1667V8.83333L7.66683 5.5V1.83333C7.66683 1.27999 7.22016 0.833328 6.66683 0.833328C6.1135 0.833328 5.66683 1.27999 5.66683 1.83333V5.5L0.333496 8.83333V10.1667L5.66683 8.5V12.1667L4.3335 13.1667V14.1667L6.66683 13.5L9.00016 14.1667V13.1667L7.66683 12.1667V8.5L13.0002 10.1667Z" fill="#262626"></path>

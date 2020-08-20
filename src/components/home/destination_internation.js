@@ -1,6 +1,6 @@
 import React from 'react';
 
-import DesnitionInternation from "../data/listInternation";
+import DesnitionInternation from "../../data/listInternation";
 
 function DestinationInternation() {
     let listDensnitionInter = DesnitionInternation;
@@ -18,7 +18,7 @@ function DestinationInternation() {
                                 return (
                                     <li key={index} className={`item${list.id}`}>
                                         <a href="/" >
-                                            <img alt={list.name} src={require(`../assets/img/destinationhot/${list.picture}`)}></img>
+                                            <img alt={list.name} src={require(`../../assets/img/destinationhot/${list.picture}`)}></img>
                                         </a>
                                     </li>
                                 )

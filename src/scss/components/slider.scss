@@ -100,7 +100,21 @@
                     margin: 0 0 10px;
                     float: left;
                 }
-
+                .search__submit {
+                    height: 40px;
+                    background-color: #ff8917;
+                    color: #fff;
+                    font-size: 16px;
+                    cursor: pointer;
+                    i {
+                        margin-right: 5px;
+                        position: relative;
+                        top: 1px;
+                    }
+                }
+                .search__submit:hover {
+                    background-color: #ffc317 !important;
+                }
                 .formsearch__content {
                     position: relative;
                     align-items: flex-end;
@@ -122,18 +136,6 @@
                     .check__out {
                         width: 15%;
                     }
-
-                    .search__submit {
-                        width: 10%;
-                        height: 40px;
-                        background-color: #ff8917;
-                        color: #fff;
-                        i {
-                            margin-right: 5px;
-                            position: relative;
-                            top: 1px;
-                        }
-                    }
                 }
                 .flighthome__content {
                     display: grid;
@@ -152,17 +154,7 @@
                     input::placeholder {
                         transform: translateX(144px);
                     }
-                    .search__submit {
-                        height: 40px;
-                        background-color: #ff8917;
-                        color: #fff;
-                        font-size: 16px;
-                        i {
-                            margin-right: 5px;
-                            position: relative;
-                            top: 1px;
-                        }
-                    }
+
                     .fc__icon {
                         position: absolute;
                         top: 6px;

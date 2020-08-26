@@ -36,6 +36,17 @@
                     }
                 }
             }
+            li:hover {
+                color: #fa8c16;
+                a {
+                    color: #fa8c16;
+                    svg {
+                        path {
+                            fill: #fa8c16;
+                        }
+                    }
+                }
+            }
             .activeh {
                 background-color: rgba(253, 185, 19, 0.1);
                 color: #fa8c16;
